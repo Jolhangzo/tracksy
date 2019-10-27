@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "movement-simulator": {
+      "commandName": "Project",
+      "commandLineArgs": "20"
+    }
+  }
+}

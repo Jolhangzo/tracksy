@@ -1,0 +1,253 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <ReleaseVersion>0.1.1</ReleaseVersion>
+    <AssemblyName>JunctionXCore</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Services\Backend\**" />
+    <Compile Remove="ValueConverters\**" />
+    <EmbeddedResource Remove="Services\Backend\**" />
+    <EmbeddedResource Remove="ValueConverters\**" />
+    <None Remove="Services\Backend\**" />
+    <None Remove="ValueConverters\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\CampaignTypeDB.txt" />
+    <None Remove="Resources\CardDB.txt" />
+    <None Remove="Resources\FilterDb.txt" />
+    <None Remove="Resources\Icons\CampaignTypes\birthday.png" />
+    <None Remove="Resources\Icons\CampaignTypes\first_visit.png" />
+    <None Remove="Resources\Icons\CampaignTypes\guaranteed.png" />
+    <None Remove="Resources\Icons\CampaignTypes\happy_day.png" />
+    <None Remove="Resources\Icons\CampaignTypes\loyalty.png" />
+    <None Remove="Resources\Icons\CampaignTypes\revisit.png" />
+    <None Remove="Resources\Icons\CampaignTypes\rush.png" />
+    <None Remove="Resources\Icons\CampaignTypes\season.png" />
+    <None Remove="Resources\Icons\Cards\amex.png" />
+    <None Remove="Resources\Icons\Cards\mastercard.png" />
+    <None Remove="Resources\Icons\Cards\visa.png" />
+    <None Remove="Resources\Icons\Filters\activelife.png" />
+    <None Remove="Resources\Icons\Filters\activelife_2.png" />
+    <None Remove="Resources\Icons\Filters\arts.png" />
+    <None Remove="Resources\Icons\Filters\arts_2.png" />
+    <None Remove="Resources\Icons\Filters\arts_22dp.png" />
+    <None Remove="Resources\Icons\Filters\arts_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\auto.png" />
+    <None Remove="Resources\Icons\Filters\auto_2.png" />
+    <None Remove="Resources\Icons\Filters\auto_22dp.png" />
+    <None Remove="Resources\Icons\Filters\auto_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\beauty.png" />
+    <None Remove="Resources\Icons\Filters\beauty_2.png" />
+    <None Remove="Resources\Icons\Filters\bicycle.png" />
+    <None Remove="Resources\Icons\Filters\bicycle_2.png" />
+    <None Remove="Resources\Icons\Filters\books_22dp.png" />
+    <None Remove="Resources\Icons\Filters\books_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\clothes_22dp.png" />
+    <None Remove="Resources\Icons\Filters\clothes_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\computer_22dp.png" />
+    <None Remove="Resources\Icons\Filters\computer_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\education.png" />
+    <None Remove="Resources\Icons\Filters\education_2.png" />
+    <None Remove="Resources\Icons\Filters\electronics_22dp.png" />
+    <None Remove="Resources\Icons\Filters\electronics_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\entertaintment_22dp.png" />
+    <None Remove="Resources\Icons\Filters\entertaintment_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\event.png" />
+    <None Remove="Resources\Icons\Filters\event_2.png" />
+    <None Remove="Resources\Icons\Filters\fiancial_22dp.png" />
+    <None Remove="Resources\Icons\Filters\fiancial_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\financial.png" />
+    <None Remove="Resources\Icons\Filters\financial_2.png" />
+    <None Remove="Resources\Icons\Filters\flavor.png" />
+    <None Remove="Resources\Icons\Filters\flavor_2.png" />
+    <None Remove="Resources\Icons\Filters\food.png" />
+    <None Remove="Resources\Icons\Filters\food_2.png" />
+    <None Remove="Resources\Icons\Filters\food_22dp.png" />
+    <None Remove="Resources\Icons\Filters\food_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\health.png" />
+    <None Remove="Resources\Icons\Filters\health_2.png" />
+    <None Remove="Resources\Icons\Filters\health_22dp.png" />
+    <None Remove="Resources\Icons\Filters\health_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\homeservice.png" />
+    <None Remove="Resources\Icons\Filters\homeservice_2.png" />
+    <None Remove="Resources\Icons\Filters\home_22dp.png" />
+    <None Remove="Resources\Icons\Filters\home_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\hotel.png" />
+    <None Remove="Resources\Icons\Filters\hotel_2.png" />
+    <None Remove="Resources\Icons\Filters\localservice.png" />
+    <None Remove="Resources\Icons\Filters\localservice_2.png" />
+    <None Remove="Resources\Icons\Filters\massmedia.png" />
+    <None Remove="Resources\Icons\Filters\massmedia_2.png" />
+    <None Remove="Resources\Icons\Filters\miscellaneous_22dp.png" />
+    <None Remove="Resources\Icons\Filters\miscellaneous_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\nightlife.png" />
+    <None Remove="Resources\Icons\Filters\nightlife_2.png" />
+    <None Remove="Resources\Icons\Filters\nonprofit_22dp.png" />
+    <None Remove="Resources\Icons\Filters\nonprofit_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\others_22dp.png" />
+    <None Remove="Resources\Icons\Filters\others_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\pets.png" />
+    <None Remove="Resources\Icons\Filters\pets_2.png" />
+    <None Remove="Resources\Icons\Filters\pets_22dp.png" />
+    <None Remove="Resources\Icons\Filters\pets_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\professional.png" />
+    <None Remove="Resources\Icons\Filters\professional_2.png" />
+    <None Remove="Resources\Icons\Filters\public.png" />
+    <None Remove="Resources\Icons\Filters\public_2.png" />
+    <None Remove="Resources\Icons\Filters\realestate.png" />
+    <None Remove="Resources\Icons\Filters\realestate_2.png" />
+    <None Remove="Resources\Icons\Filters\religious.png" />
+    <None Remove="Resources\Icons\Filters\religious_2.png" />
+    <None Remove="Resources\Icons\Filters\restaurant.png" />
+    <None Remove="Resources\Icons\Filters\restaurant_2.png" />
+    <None Remove="Resources\Icons\Filters\shopping.png" />
+    <None Remove="Resources\Icons\Filters\shopping_2.png" />
+    <None Remove="Resources\Icons\Filters\subscription_22dp.png" />
+    <None Remove="Resources\Icons\Filters\subscription_2_22dp.png" />
+    <None Remove="Resources\Icons\Filters\travel_22dp.png" />
+    <None Remove="Resources\Icons\Filters\travel_2_22dp.png" />
+    <None Remove="Resources\Icons\Orders\best_match_22dp.png" />
+    <None Remove="Resources\Icons\Orders\best_match_2_22dp.png" />
+    <None Remove="Resources\Icons\Orders\closest.png" />
+    <None Remove="Resources\Icons\Orders\closest_2.png" />
+    <None Remove="Resources\Icons\Orders\distance_22dp.png" />
+    <None Remove="Resources\Icons\Orders\distance_2_22dp.png" />
+    <None Remove="Resources\Icons\Orders\ending.png" />
+    <None Remove="Resources\Icons\Orders\ending_2.png" />
+    <None Remove="Resources\Icons\Orders\ending_soonest_22dp.png" />
+    <None Remove="Resources\Icons\Orders\ending_soonest_2_22dp.png" />
+    <None Remove="Resources\Icons\Orders\match.png" />
+    <None Remove="Resources\Icons\Orders\match_2.png" />
+    <None Remove="Resources\Icons\Orders\newest.png" />
+    <None Remove="Resources\Icons\Orders\newest_2.png" />
+    <None Remove="Resources\Icons\Orders\new_promotion_22dp.png" />
+    <None Remove="Resources\Icons\Orders\new_promotion_2_22dp.png" />
+    <None Remove="Resources\Icons\Orders\others_22dp.png" />
+    <None Remove="Resources\Icons\Orders\others_2_22dp.png" />
+    <None Remove="Resources\OrderDB.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CardDB.txt" />
+    <EmbeddedResource Include="Resources\Icons\CampaignTypes\birthday.png" />
+    <EmbeddedResource Include="Resources\Icons\CampaignTypes\first_visit.png" />
+    <EmbeddedResource Include="Resources\Icons\CampaignTypes\guaranteed.png" />
+    <EmbeddedResource Include="Resources\Icons\CampaignTypes\happy_day.png" />
+    <EmbeddedResource Include="Resources\Icons\CampaignTypes\loyalty.png" />
+    <EmbeddedResource Include="Resources\Icons\CampaignTypes\revisit.png" />
+    <EmbeddedResource Include="Resources\Icons\CampaignTypes\rush.png" />
+    <EmbeddedResource Include="Resources\Icons\CampaignTypes\season.png" />
+    <EmbeddedResource Include="Resources\Icons\Cards\amex.png" />
+    <EmbeddedResource Include="Resources\Icons\Cards\mastercard.png" />
+    <EmbeddedResource Include="Resources\Icons\Cards\visa.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\activelife.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\activelife_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\arts.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\arts_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\auto.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\auto_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\beauty.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\beauty_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\bicycle.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\bicycle_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\education.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\education_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\event.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\event_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\financial.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\financial_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\flavor.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\flavor_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\food.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\food_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\health.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\health_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\homeservice.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\homeservice_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\hotel.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\hotel_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\localservice.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\localservice_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\massmedia.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\massmedia_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\nightlife.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Icons\Filters\nightlife_2.png">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Icons\Filters\pets.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\pets_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\professional.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\professional_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\public.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\public_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\realestate.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\realestate_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\religious.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\religious_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\restaurant.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\restaurant_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\shopping.png" />
+    <EmbeddedResource Include="Resources\Icons\Filters\shopping_2.png" />
+    <EmbeddedResource Include="Resources\CampaignTypeDB.txt" />
+    <EmbeddedResource Include="Resources\Icons\Orders\closest.png" />
+    <EmbeddedResource Include="Resources\Icons\Orders\closest_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Orders\ending.png" />
+    <EmbeddedResource Include="Resources\Icons\Orders\ending_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Orders\match.png" />
+    <EmbeddedResource Include="Resources\Icons\Orders\match_2.png" />
+    <EmbeddedResource Include="Resources\Icons\Orders\newest.png" />
+    <EmbeddedResource Include="Resources\Icons\Orders\newest_2.png" />
+    <EmbeddedResource Include="Resources\OrderDB.txt" />
+    <EmbeddedResource Include="Resources\FilterDB.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.4" />
+    <PackageReference Include="JWT" Version="5.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.0.3" />
+    <PackageReference Include="MvvmCross" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.Color" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.Email" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.FieldBinding" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.File" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.Location" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.Messenger" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.MethodBinding" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.PhoneCall" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.ResxLocalization" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.Share" Version="6.3.1" />
+    <PackageReference Include="MvvmCross.Plugin.WebBrowser" Version="6.3.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="refit" Version="4.7.51" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="Xam.Plugin.DeviceInfo" Version="4.1.1" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\..\..\..\Users\leven\.nuget\packages\xamarin.android.support.v7.appcompat\28.0.0.1\lib\monoandroid90\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Misc\PhoneFormatter.cs" />
+    <Compile Remove="Misc\NameOf.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ViewModels\EmailVerifiedLoggedInView.designer.cs">
+      <DependentUpon>EmailVerifiedLoggedInView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="321" id="cxk-wN-pdQ" customClass="NewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="321"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="321"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMR-uV-1vD">
+                        <rect key="frame" x="11" y="11" width="419" height="308"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Syh-gG-XAD" customClass="MvxCachedImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="419" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="UBP-ss-wrU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Airbnb launches policy to promote animal-friendly travel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7en-cu-VBT">
+                                <rect key="frame" x="8" y="207" width="403" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxC-ir-tBi">
+                                <rect key="frame" x="8" y="267" width="403" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="61" id="gWm-xk-Kqd"/>
+                                </constraints>
+                                <string key="text">We’re working with travel booking platform Airbnb to create a new animal welfare policy. The company will now also offer more than 1,000 animal-friendly...</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7en-cu-VBT" firstAttribute="top" secondItem="Syh-gG-XAD" secondAttribute="bottom" constant="7" id="418-Fm-lco"/>
+                            <constraint firstAttribute="trailing" secondItem="7en-cu-VBT" secondAttribute="trailing" constant="8" id="5is-Ge-vvd"/>
+                            <constraint firstItem="XxC-ir-tBi" firstAttribute="top" secondItem="7en-cu-VBT" secondAttribute="bottom" constant="7" id="MLZ-S7-gEP"/>
+                            <constraint firstAttribute="bottom" secondItem="XxC-ir-tBi" secondAttribute="bottom" id="RBi-7N-HtA"/>
+                            <constraint firstItem="Syh-gG-XAD" firstAttribute="top" secondItem="vMR-uV-1vD" secondAttribute="top" id="VI6-GN-lLY"/>
+                            <constraint firstItem="Syh-gG-XAD" firstAttribute="leading" secondItem="vMR-uV-1vD" secondAttribute="leading" id="VOW-CS-2ot"/>
+                            <constraint firstAttribute="height" constant="308" id="Wf8-7X-hfy"/>
+                            <constraint firstItem="XxC-ir-tBi" firstAttribute="trailing" secondItem="7en-cu-VBT" secondAttribute="trailing" id="Xtn-pw-uB7"/>
+                            <constraint firstItem="7en-cu-VBT" firstAttribute="leading" secondItem="vMR-uV-1vD" secondAttribute="leading" constant="8" id="fal-WF-MpS"/>
+                            <constraint firstItem="XxC-ir-tBi" firstAttribute="leading" secondItem="7en-cu-VBT" secondAttribute="leading" id="sBP-hk-HCL"/>
+                            <constraint firstAttribute="trailing" secondItem="Syh-gG-XAD" secondAttribute="trailing" id="ygj-M9-zlx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vMR-uV-1vD" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="11" id="2hA-5j-5sm"/>
+                    <constraint firstAttribute="trailing" secondItem="vMR-uV-1vD" secondAttribute="trailing" constant="11" id="TQY-lw-WPg"/>
+                    <constraint firstItem="vMR-uV-1vD" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="11" id="mK7-gQ-bAK"/>
+                    <constraint firstAttribute="bottom" secondItem="vMR-uV-1vD" secondAttribute="bottom" constant="2" id="pTH-fP-27O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="CoverImageView" destination="Syh-gG-XAD" id="ZiP-WQ-pJB"/>
+                <outlet property="DescriptionLabel" destination="XxC-ir-tBi" id="OM6-r8-Gm5"/>
+                <outlet property="ShadowView" destination="vMR-uV-1vD" id="TOD-mN-avB"/>
+                <outlet property="TitleLabel" destination="7en-cu-VBT" id="i3n-Kz-EiN"/>
+            </connections>
+            <point key="canvasLocation" x="112.31884057971016" y="51.5625"/>
+        </tableViewCell>
+    </objects>
+</document>
